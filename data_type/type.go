@@ -2,7 +2,7 @@
  * @Description: 请输入....
  * @Author: Gavin
  * @Date: 2022-06-27 15:06:23
- * @LastEditTime: 2022-06-28 14:39:40
+ * @LastEditTime: 2022-06-28 17:25:00
  * @LastEditors: Gavin
  */
 package datatype
@@ -76,14 +76,30 @@ func GetNumberAndAdvance() {
 
 }
 func GetString() {
-	var str1 string = "hello world"
-	var str2 = "word"
-	s3 := "sdasd"
-	s4 := `dasdasdsdasda
-	dsadsads
-	sdasd`
+	// var str1 string = "hello world"
+	// var str2 = "word"
+	// s3 := "sdasd"
+	// s4 := `dasdasdsdasda
+	// dsadsads
+	// sdasd`
 	//字符串拼接
-	msg := fmt.Sprintf("%s,%s", s3, s4)
+	// msg := fmt.Sprintf("%s,%s", s3, s4)
 	//正常拼接
-	msg1 := s3 + s4
+	// msg1 := s3 + s4
+	//转译字符
+	// s := "hellow"
+	// print(s)
+	// print(s)
+	// print("\n***********\n")
+	// print(s + "\n")
+	// print(s)
+	// print("c:\\demo\\file.pdf")
+	n := 3 //索引
+	m := 5
+	var s string = "hellow goto"
+	fmt.Println(s[n])                  //打印索引3的原始字符
+	fmt.Println(s[n:])                 //后续n以后的片段
+	fmt.Println(s[n:m])                //n-m的片段
+	fmt.Println(s[:m])                 //从头到m的片段
+	fmt.Printf("s(len): %v\n", len(s)) //获取长度
 }

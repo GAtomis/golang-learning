@@ -2,7 +2,7 @@
  * @Description: 请输入....
  * @Author: Gavin
  * @Date: 2022-06-28 15:00:32
- * @LastEditTime: 2022-06-28 15:26:08
+ * @LastEditTime: 2022-06-28 17:27:00
  * @LastEditors: Gavin
 -->
 # golang-learning
@@ -33,4 +33,25 @@ go get github.com/go-sql-driver/mysql
 1. 新建项目文件夹
 2. 初始化项目
 3. 建立/user/user.go 
-4. 
+
+
+
+### 字符串
+#### 字符串切片
+```
+n:=3//索引
+m:=5
+var s string ="hellow goto"
+fmt.println(s[n])//打印索引3的原始字符
+fmt.println(s[n:])//后续n以后的片段
+fmt.println(s[n:m])//n-m的片段
+fmt.println(s[:m])//从头到m的片段
+fmt.Printf("s(len): %v\n", len(s)) //获取长度
+```
+#### 转义字符串
+* /n  换行
+* /*  转义
+
+#### 运用strings包的方法
+具体请查看包api
+
