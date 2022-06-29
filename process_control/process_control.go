@@ -2,7 +2,7 @@
  * @Description: 请输入....
  * @Author: Gavin
  * @Date: 2022-06-29 14:26:10
- * @LastEditTime: 2022-06-29 17:39:16
+ * @LastEditTime: 2022-06-29 19:37:47
  * @LastEditors: Gavin
  */
 package process_control
@@ -73,10 +73,31 @@ func RunSlice() {
 	fmt.Printf("s1: %v\n", s1)
 	//通过make声明一个切片
 	s2 := make([]int, 2)
+	fmt.Printf("s2: %v\n", s2)
+	var s3 = []int{1, 2, 3, 4, 5}
+	//[i,n]i包含 n不包含
+	fmt.Printf("s3从0～1: %v\n", s3[:1])
+	fmt.Printf("s3从1～2: %v\n", s3[1:2])
+	fmt.Printf("s3从2～end: %v\n", s3[2:])
 
 }
 
-func createdSlice()int[]{
-	s1:=[]int{1,3,2}
-		return s1
+func CreatedSlice() []int {
+	s1 := []int{1, 3, 2}
+	fmt.Printf("s1: %v\n", cap(s1))
+	fmt.Printf("s1: %v\n", len(s1))
+	return s1
+}
+
+func DelAndAddSlice() {
+	//添加
+	s1 := []int{1, 3, 2}
+	s1 = append(s1, 11)
+	s1 = append(s1, 12)
+	s1 = append(s1, 13)
+	//拓展运算符
+	s1 = append(s1, s1[0:3]...)
+	fmt.Printf("s1: %v\n", s1)
+	//删除
+
 }
