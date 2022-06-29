@@ -7,10 +7,8 @@
  */
 package main
 
-import (
-	datatype "mypro/data_type"
-)
+import "mypro/format"
 
 func main() {
-	datatype.GetString()
+	format.GetWebSite()
 }

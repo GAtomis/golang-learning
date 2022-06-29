@@ -2,7 +2,7 @@
  * @Description: 请输入....
  * @Author: Gavin
  * @Date: 2022-06-28 15:00:32
- * @LastEditTime: 2022-06-28 17:27:00
+ * @LastEditTime: 2022-06-29 11:44:08
  * @LastEditors: Gavin
 -->
 # golang-learning
@@ -51,7 +51,15 @@ fmt.Printf("s(len): %v\n", len(s)) //获取长度
 #### 转义字符串
 * /n  换行
 * /*  转义
+#### 输出占位
+* %v 输出值
+* %#v 包全路径
+* %T 输出类型
+* %t 布尔类型输出
 
 #### 运用strings包的方法
 具体请查看包api
 
+### golang格式化输出
+
+####
