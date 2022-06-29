@@ -2,7 +2,7 @@
  * @Description: 请输入....
  * @Author: Gavin
  * @Date: 2022-06-28 15:00:32
- * @LastEditTime: 2022-06-29 11:44:08
+ * @LastEditTime: 2022-06-29 14:24:35
  * @LastEditors: Gavin
 -->
 # golang-learning
@@ -56,6 +56,8 @@ fmt.Printf("s(len): %v\n", len(s)) //获取长度
 * %#v 包全路径
 * %T 输出类型
 * %t 布尔类型输出
+* %b 二进制输出
+* %c asckII 码
 
 #### 运用strings包的方法
 具体请查看包api
@@ -63,3 +65,5 @@ fmt.Printf("s(len): %v\n", len(s)) //获取长度
 ### golang格式化输出
 
 ####
+
+### 流程控制
