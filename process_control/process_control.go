@@ -2,7 +2,7 @@
  * @Description: 请输入....
  * @Author: Gavin
  * @Date: 2022-06-29 14:26:10
- * @LastEditTime: 2022-06-29 19:37:47
+ * @LastEditTime: 2022-06-30 14:18:35
  * @LastEditors: Gavin
  */
 package process_control
@@ -10,6 +10,14 @@ package process_control
 import "fmt"
 
 func Run() {
+	m1 := createdMap()
+	key := "name"
+	value := m1[key]
+	fmt.Printf("value: %v\n", value)
+
+}
+func control() {
+
 	a := 1
 	b := 2
 	if a > b {
@@ -28,7 +36,6 @@ func Run() {
 	for _, v := range x {
 		fmt.Printf("v: %v\n", v)
 	}
-
 }
 func ScanNumber() {
 	var num int
@@ -82,6 +89,7 @@ func RunSlice() {
 
 }
 
+//	创建切片
 func CreatedSlice() []int {
 	s1 := []int{1, 3, 2}
 	fmt.Printf("s1: %v\n", cap(s1))
@@ -91,7 +99,7 @@ func CreatedSlice() []int {
 
 func DelAndAddSlice() {
 	//添加
-	s1 := []int{1, 3, 2}
+	s1 := []int{1, 2, 3}
 	s1 = append(s1, 11)
 	s1 = append(s1, 12)
 	s1 = append(s1, 13)
@@ -99,5 +107,29 @@ func DelAndAddSlice() {
 	s1 = append(s1, s1[0:3]...)
 	fmt.Printf("s1: %v\n", s1)
 	//删除
+	s1 = delSlice[int](s1, 2)
+	fmt.Printf("s1: %v\n", s1)
+}
 
+//实现一个删除切片||数组
+func delSlice[T any](target []T, index int) []T {
+	if index < len(target) {
+		return append(target[:index], target[index+1:]...)
+	}
+	return target
+
+}
+
+//创建map
+func createdMap() map[string]string {
+	m1 := make(map[string]string)
+	m1["name"] = "tom"
+	m1["age"] = "20"
+	for k, v := range m1 {
+		fmt.Printf("%v,%v\n", k, v)
+
+	}
+	fmt.Printf("m1: %v\n", m1)
+
+	return m1
 }

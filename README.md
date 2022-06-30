@@ -2,7 +2,7 @@
  * @Description: 请输入....
  * @Author: Gavin
  * @Date: 2022-06-28 15:00:32
- * @LastEditTime: 2022-06-29 17:48:50
+ * @LastEditTime: 2022-06-30 14:34:18
  * @LastEditors: Gavin
 -->
 # golang-learning
@@ -67,3 +67,11 @@ fmt.Printf("s(len): %v\n", len(s)) //获取长度
 ####
 
 ### 流程控制
+具体看包内实现
+* array
+* slice
+* map
+* for
+* if eles
+
+### 函数实现
