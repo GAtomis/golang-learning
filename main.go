@@ -2,13 +2,15 @@
  * @Description: 请输入....
  * @Author: Gavin
  * @Date: 2022-06-24 23:43:26
- * @LastEditTime: 2022-06-30 12:11:08
+ * @LastEditTime: 2022-06-30 14:45:18
  * @LastEditors: Gavin
  */
 package main
 
-import "mypro/process_control"
+import (
+	"mypro/function"
+)
 
 func main() {
-	process_control.Run()
+	function.Run()
 }

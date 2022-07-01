@@ -2,7 +2,7 @@
  * @Description: 请输入....
  * @Author: Gavin
  * @Date: 2022-06-28 15:00:32
- * @LastEditTime: 2022-06-30 14:34:18
+ * @LastEditTime: 2022-07-01 15:40:08
  * @LastEditors: Gavin
 -->
 # golang-learning
@@ -75,3 +75,6 @@ fmt.Printf("s(len): %v\n", len(s)) //获取长度
 * if eles
 
 ### 函数实现
+* 高阶函数
+* 定义函数类型和返回值
+* 函数闭包
