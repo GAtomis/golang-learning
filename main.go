@@ -2,15 +2,26 @@
  * @Description: 请输入....
  * @Author: Gavin
  * @Date: 2022-06-24 23:43:26
- * @LastEditTime: 2022-06-30 14:45:18
+ * @LastEditTime: 2022-07-01 17:22:19
  * @LastEditors: Gavin
  */
 package main
 
 import (
-	"mypro/function"
+	"mypro/pointer"
 )
 
 func main() {
-	function.Run()
+	pointer.Run()
 }
+
+// func init() {
+// 	fmt.Println("init")
+// }
+
+// var i int = initVar()
+
+// func initVar() int {
+// 	fmt.Println("initVar")
+// 	return 100
+// }

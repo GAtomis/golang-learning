@@ -2,15 +2,17 @@
  * @Description: 请输入....
  * @Author: Gavin
  * @Date: 2022-06-30 14:32:54
- * @LastEditTime: 2022-07-01 15:26:32
+ * @LastEditTime: 2022-07-01 16:49:40
  * @LastEditors: Gavin
  */
 package function
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func Run() {
-	useClosure()
+	useDefer()
 }
 func f2(agrs ...int) {
 	for _, v := range agrs {
@@ -74,4 +76,24 @@ func add() f1 {
 		x += a
 		return x
 	}
+}
+
+//递归
+func deepRun(a int) int {
+	if a == 1 {
+		return a
+	} else {
+		return a * deepRun(a-1)
+	}
+}
+
+//defer 压栈 后进先出 一个函数结束后或者return前执行
+func useDefer() {
+
+	fmt.Println("start")
+	defer fmt.Println("1")
+	defer fmt.Println("2")
+	defer fmt.Println("3")
+	fmt.Println("end")
+
 }
