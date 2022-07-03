@@ -2,7 +2,7 @@
  * @Description: 请输入....
  * @Author: Gavin
  * @Date: 2022-06-30 14:32:54
- * @LastEditTime: 2022-07-01 16:49:40
+ * @LastEditTime: 2022-07-03 09:39:41
  * @LastEditors: Gavin
  */
 package function
@@ -19,11 +19,15 @@ func f2(agrs ...int) {
 		fmt.Printf("v: %v\n", v)
 	}
 }
+
+//匿名返回参数
 func towRe() (string, int) {
 	name := "张三"
 	age := 12
 	return name, age
 }
+
+//命名返回参数
 func towRe2() (name string, age int) {
 	name = "张三"
 	age = 12

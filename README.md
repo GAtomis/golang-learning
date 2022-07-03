@@ -2,7 +2,7 @@
  * @Description: 请输入....
  * @Author: Gavin
  * @Date: 2022-06-28 15:00:32
- * @LastEditTime: 2022-07-01 17:25:51
+ * @LastEditTime: 2022-07-03 09:52:17
  * @LastEditors: Gavin
 -->
 # golang-learning
@@ -90,3 +90,20 @@ fmt.Printf("s(len): %v\n", len(s)) //获取长度
 | 指针地址  | 代表变量所在内存的地址 |&|
 |指针类型  | 代表所取指针地址的指针类型 |*int,*string....|
 |指针取值  | 代表通过地址去取原值 |*|
+
+### 结构体
+go中没有类这个概念所以取而代之的是结构体
+如何定义一个结构体
+```
+type Person struct{
+  id,age int
+  name string
+ 
+  sex bool
+}
+//具体实现请看demo
+
+```
+* 结构体声明
+* 结构体指针
+
