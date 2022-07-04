@@ -2,7 +2,7 @@
  * @Description: 请输入....
  * @Author: Gavin
  * @Date: 2022-06-28 15:00:32
- * @LastEditTime: 2022-07-03 09:52:17
+ * @LastEditTime: 2022-07-04 11:28:40
  * @LastEditors: Gavin
 -->
 # golang-learning
@@ -106,4 +106,5 @@ type Person struct{
 ```
 * 结构体声明
 * 结构体指针
+* 通过new关键字创造结构体指针
 
