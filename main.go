@@ -1,16 +1,18 @@
 /*
  * @Description: 请输入....
- * @Author: Gavin
+ * @Author: Gavingo showMessage("golang")
  * @Date: 2022-06-24 23:43:26
- * @LastEditTime: 2022-07-04 17:13:29
+ * @LastEditTime: 2022-07-05 14:45:23
  * @LastEditors: Gavin
  */
 package main
 
-import "mypro/method"
+import (
+	"mypro/goroutines"
+)
 
 func main() {
-	method.Run()
+	goroutines.Run()
 }
 
 // func init() {
