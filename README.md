@@ -2,11 +2,11 @@
  * @Description: 请输入....
  * @Author: Gavin
  * @Date: 2022-06-28 15:00:32
- * @LastEditTime: 2022-07-05 15:02:52
+ * @LastEditTime: 2022-07-05 15:20:47
  * @LastEditors: Gavin
 -->
 # golang-learning
-为了给我自己的Artemis后台搭一个 适合后台
+golang学习笔记
 
 ## 学习GO 
 
