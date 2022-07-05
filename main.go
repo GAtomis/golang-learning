@@ -2,15 +2,15 @@
  * @Description: 请输入....
  * @Author: Gavin
  * @Date: 2022-06-24 23:43:26
- * @LastEditTime: 2022-07-01 18:17:17
+ * @LastEditTime: 2022-07-04 17:13:29
  * @LastEditors: Gavin
  */
 package main
 
-import "mypro/object"
+import "mypro/method"
 
 func main() {
-	object.Run()
+	method.Run()
 }
 
 // func init() {

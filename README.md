@@ -2,7 +2,7 @@
  * @Description: 请输入....
  * @Author: Gavin
  * @Date: 2022-06-28 15:00:32
- * @LastEditTime: 2022-07-04 11:28:40
+ * @LastEditTime: 2022-07-05 11:13:34
  * @LastEditors: Gavin
 -->
 # golang-learning
@@ -107,4 +107,11 @@ type Person struct{
 * 结构体声明
 * 结构体指针
 * 通过new关键字创造结构体指针
+* 结构体嵌套
+
+### golang方法
+go中的方法作为函数是特殊的存在,于struct绑定 相当于类的方法
+
+### interface
+结构体
 
