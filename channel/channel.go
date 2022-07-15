@@ -2,7 +2,7 @@
  * @Description: 并发通道
  * @Author: Gavin
  * @Date: 2022-07-15 14:07:28
- * @LastEditTime: 2022-07-15 15:15:52
+ * @LastEditTime: 2022-07-15 18:42:53
  * @LastEditors: Gavin
  */
 package channel
@@ -43,9 +43,10 @@ func myfun(mychnl chan string) {
 	for v := 0; v < 4; v++ {
 		mychnl <- "nhooo" + strconv.Itoa(v)
 	}
-	close(mychnl)
+	defer close(mychnl)
 }
 
+//关于通道的遍历
 func useFor() {
 
 	//创建通道
@@ -64,4 +65,5 @@ func useFor() {
 		}
 		fmt.Println("通道打开 ", res, ok)
 	}
+
 }
