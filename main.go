@@ -2,17 +2,15 @@
  * @Description: 请输入....
  * @Author: Gavingo showMessage("golang")
  * @Date: 2022-06-24 23:43:26
- * @LastEditTime: 2022-07-15 15:53:37
+ * @LastEditTime: 2022-07-15 16:10:01
  * @LastEditors: Gavin
  */
 package main
 
-import (
-	"mypro/waitgroup"
-)
+import "mypro/runtime"
 
 func main() {
-	waitgroup.Run()
+	runtime.Run()
 }
 
 // func init() {
