@@ -7,10 +7,10 @@
  */
 package main
 
-import "mypro/runtime"
+import mutex_test "mypro/mutex"
 
 func main() {
-	runtime.Run()
+	mutex_test.Run()
 }
 
 // func init() {
