@@ -2,7 +2,7 @@
  * @Description: 请输入....
  * @Author: Gavin
  * @Date: 2022-06-28 15:00:32
- * @LastEditTime: 2022-07-05 15:20:47
+ * @LastEditTime: 2022-07-15 16:01:47
  * @LastEditors: Gavin
 -->
 # golang-learning
@@ -116,5 +116,22 @@ go中的方法作为函数是特殊的存在,于struct绑定 相当于类的方�
 接口的实现
 ### 协程
 通过go关键字去创建一个协程
+### 并发编程-channel
+通道可以跨越协程去传输数据
+使用方法
+```
+//声明一个通道
+var [Channel_name] chan [Type]
+//函数创建
+[Channel_name]:=make(chan [Type])
+//send 压入数据
+Mychannel <- element
+//receice 弹出数据
+element <- Mychannel
 
+```
 
+### 并发编程-waitGroup
+实行执行栈去队列同步执行
+>场景=>主协程结束后,子协程也会结束
+ 

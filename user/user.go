@@ -2,7 +2,7 @@
  * @Description: 请输入....
  * @Author: Gavin
  * @Date: 2022-06-24 23:40:39
- * @LastEditTime: 2022-06-27 11:30:45
+ * @LastEditTime: 2022-07-15 16:01:55
  * @LastEditors: Gavin
  */
 package user
@@ -33,6 +33,6 @@ func User() {
 	//短变量声明 函数内
 	d1 := "短1"
 	d2 := "短2 "
-
+	
 
 }
