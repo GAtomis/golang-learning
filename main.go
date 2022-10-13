@@ -2,17 +2,15 @@
  * @Description: 请输入....
  * @Author: Gavingo showMessage("golang")
  * @Date: 2022-06-24 23:43:26
- * @LastEditTime: 2022-07-16 21:36:41
+ * @LastEditTime: 2022-10-10 18:34:19
  * @LastEditors: Gavin
  */
 package main
 
-import (
-	select_test "mypro/select"
-)
+import "mypro/socket"
 
 func main() {
-	select_test.Run()
+	socket.Run()
 }
 
 // func init() {

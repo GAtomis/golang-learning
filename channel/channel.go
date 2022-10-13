@@ -2,7 +2,7 @@
  * @Description: 并发通道
  * @Author: Gavin
  * @Date: 2022-07-15 14:07:28
- * @LastEditTime: 2022-07-15 18:42:53
+ * @LastEditTime: 2022-07-18 11:56:36
  * @LastEditors: Gavin
  */
 package channel
@@ -59,6 +59,8 @@ func useFor() {
 	//当ok的值设置为false时，表示通道已关闭
 	for {
 		res, ok := <-c
+
+		fmt.Printf("c: %v\n", len(c))
 		if ok == false {
 			fmt.Println("通道关闭 ", ok)
 			break
