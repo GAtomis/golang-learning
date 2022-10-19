@@ -2,7 +2,7 @@
  * @Description: 请输入....
  * @Author: Gavin
  * @Date: 2022-06-24 23:40:39
- * @LastEditTime: 2022-07-15 16:01:55
+ * @LastEditTime: 2022-10-13 17:36:08
  * @LastEditors: Gavin
  */
 package user
@@ -29,10 +29,9 @@ func User() {
 	//类型推断
 	var name2 = "sting "
 	//批量初始化
-	var p1, p2, p3 = 1, "批量", 
+	var p1, p2, p3 = 1, "批量"
 	//短变量声明 函数内
 	d1 := "短1"
-	d2 := "短2 "
-	
+	d2 := "短2"
 
 }

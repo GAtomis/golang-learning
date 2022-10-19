@@ -7,10 +7,10 @@
  */
 package main
 
-import "mypro/socket"
+import "mypro/assertion_reflect"
 
 func main() {
-	socket.Run()
+	assertion_reflect.Run()
 }
 
 // func init() {
